@@ -1,0 +1,6 @@
+{
+  "appId": "ie.ionic4poc",
+  "appName": "ionic4",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}

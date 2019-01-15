@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ionic4</string>
+    <string name="title_activity_main">ionic4</string>
+    <string name="package_name">ie.ionic4poc</string>
+    <string name="fileprovider_authority">ie.ionic4poc.fileprovider</string>
+    <string name="custom_url_scheme">ie.ionic4poc</string>
+</resources>
