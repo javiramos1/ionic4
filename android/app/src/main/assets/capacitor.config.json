@@ -1,5 +1,5 @@
 {
-  "appId": "ie.ionic4poc",
+  "appId": "io.ionic.starter",
   "appName": "ionic4",
   "bundledWebRuntime": false,
   "webDir": "www"
