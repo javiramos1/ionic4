@@ -45,7 +45,7 @@ npx cap update
 
 *** Electron
 https://angularfirebase.com/lessons/desktop-apps-with-electron-and-angular/
-Chaneg: <base href="./"> in index.html
+Chaneg: <base href="./"> in index.html and all pages
 
 npm install electron --save-dev
 
@@ -56,3 +56,13 @@ npm run electron:start
 
 
 After any update: npx cap copy
+
+*** Angular Firebase Plugin
+npm install firebase @angular/fire --save
+
+*** Google Sign in
+npm i @ionic-native/google-plus@^5.0.0-beta
+import { GooglePlus } from '@ionic-native/google-plus/npx';
+npm install firebase @angular/fire promise-polyfill --save
+sudo npm i -g cordova
+ionic cordova plugin add cordova-plugin-googleplus --variable REVERSED_CLIENT_ID=com.googleusercontent.apps.534789110521-2mu4etqlb2pu0gc96k5sfenoq95m2uqm --variable WEB_APPLICATION_CLIENT_ID=858749572832-dmuca5airemqai5ruv6nu9rs1jdughfk.apps.googleusercontent.com
