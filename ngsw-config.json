@@ -14,12 +14,29 @@
       }
     }, {
       "name": "assets",
-      "installMode": "lazy",
+      "installMode": "prefetch",
       "updateMode": "prefetch",
       "resources": {
         "files": [
           "/assets/**"
+          
+        ],
+        "urls": [
+          "https://fonts.googleapis.com/**"
         ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "api-freshness",
+      "urls": [
+        "https://google.*/**"
+      ],
+      "cacheConfig": {
+        "maxSize": 100,
+        "maxAge": "3h",
+        "strategy": "freshness"
       }
     }
   ]

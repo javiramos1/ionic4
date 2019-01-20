@@ -2,5 +2,6 @@
   "appId": "io.ionic.starter",
   "appName": "ionic4",
   "bundledWebRuntime": false,
-  "webDir": "www"
+  "webDir": "www",
+  "linuxAndroidStudioPath" : "/home/javier/prog/android-studio/bin/studio.sh"
 }

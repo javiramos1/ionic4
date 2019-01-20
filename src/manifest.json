@@ -1,11 +1,12 @@
 {
-  "name": "app",
-  "short_name": "app",
-  "theme_color": "#1976d2",
+  "name": "Irish Life",
+  "short_name": "Irish Life",
+  "theme_color": "#42f4dc",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
+  "gcm_sender_id": "534789110521",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
@@ -47,5 +48,12 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "com.google.samples.apps.iosched"
+    }
+]
 }

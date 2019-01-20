@@ -1,5 +1,6 @@
 {
   "projects": {
-    "dev": "ionic4-14418"
+    "dev": "ionic4-14418",
+    "default": "ionic4-14418"
   }
 }

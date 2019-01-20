@@ -12,19 +12,24 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
 import { AngularFireModule } from 'angularfire2';
-import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { GooglePlus } from '@ionic-native/google-plus/ngx';
 import { AngularFireAuth } from '@angular/fire/auth';
+import { AngularFireMessaging } from '@angular/fire/messaging';
+import { AngularFireFunctions } from '@angular/fire/functions';
+import { AngularFirestore } from 'angularfire2/firestore';
+
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })],
+    ServiceWorkerModule.register('/sw.js', { enabled: environment.production })],
   providers: [
     AngularFireAuth,
+    AngularFireMessaging,
+    AngularFireFunctions,
+    AngularFirestore,
     GooglePlus,
     StatusBar,
     SplashScreen,
